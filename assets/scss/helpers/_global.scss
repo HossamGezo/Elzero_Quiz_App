@@ -1,0 +1,34 @@
+@use "functions" as *;
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: Arial;
+  background-color: color(wht-color-02);
+}
+ul li {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+button, a {
+  cursor: pointer;
+}
+input, 
+button, 
+textarea,
+select {
+  font-family: inherit;
+  border: none;
+  outline: none;
+}
+.container {
+  width: 60%;
+  padding: 0 30px;
+  margin: 0 auto;
+}

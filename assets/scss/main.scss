@@ -1,0 +1,132 @@
+// Import All Using Helpers Directory
+@use "helpers/usinghelpers" as *;
+@use "helpers/global";
+
+// Begining Of The Project
+
+.quiz-app {
+  width: 800px;
+  margin: 100px auto;
+  background-color: color(gry-color-04);
+  padding: 20px;
+  border-radius: 7px;
+  @include flex(column, null, center, space-between, 20px);
+  &__head {
+    background-color: color(wht-color-01);
+    padding: 20px;
+    border-radius: 7px;
+    @include flex(null, null, space-between, center, null);
+    font-size: 18px;
+    font-weight: bold;
+    span {
+      margin-left: 5px;
+    }
+  }
+  &__body {
+    background-color: color(wht-color-01);
+    padding: 20px;
+    border-radius: 7px;
+    .question-head {
+      margin-bottom: 30px;
+      span {
+        color: color(red-color-01);
+        margin-right: 5px;
+      }
+    }
+    .answers {
+      .choose {
+        font-size: 20px;
+        background-color: color(gry-color-04);
+        padding: 20px;
+        @include flex(null, null, flex-start, center, 10px);
+        &:first-child {
+          border-radius: 7px 7px 0 0;
+        }
+        &:last-child {
+          border-radius: 0 0 7px 7px;
+        }
+        &:not(:last-child) {
+          border-bottom: 1px solid color(gry-color-09);
+        }
+        .choose-input, .choose-text {
+          cursor: pointer;
+        }
+        .choose-input {
+          width: 17px;
+          height: 17px;
+          accent-color: color(blu-color-05);
+          &:checked:hover + .choose-text {
+            color: color(blu-color-06);
+          }
+          &:checked:active + .choose-text {
+            color: color(blu-color-07);
+          }
+        }
+        .choose-input:checked + .choose-text {
+          color: color(blu-color-05);
+        }
+        .choose-text {
+          user-select: none;
+          &:active { 
+            color: color(blu-color-07);
+          }
+        }
+      }
+    }
+  }
+  &__submit {
+    background-color: color(blu-color-02);
+    color: color(wht-color-01);
+    font-size: 25px;
+    font-weight: bold;
+    padding: 20px;
+    border-radius: 7px;
+    @include transition;
+    &:hover {
+      background-color: darken(color(blu-color-02), 10%);
+    }
+    &:active {
+      background-color: color(blu-color-02);
+    }
+  }
+  &__time {
+    background-color: color(wht-color-01);
+    padding: 20px;
+    border-radius: 7px;
+    @include flex(null, null, space-between, center, null);
+    .tabs {
+      @include flex(null, null, center, center, 5px);
+      span {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background-color: color(gry-color-09);
+        @include transition;
+        cursor: pointer;
+        &.active {
+          background-color: color(blu-color-04);
+        }
+      }
+    }
+    .time {
+      font-size: 18px;
+      font-weight: bold;
+    }
+  }
+  &__result {
+    font-size: 19px;
+    span {
+      font-size: 20px;
+      font-weight: bold;
+    }
+    span.bad {
+      color: color(red-color-02);
+    }
+    span.good {
+      color: color(grn-color-03);
+    }
+    span.perfect {
+      color: color(blu-color-02);
+    }
+  }
+}

@@ -1,0 +1,67 @@
+// Color BreakPoints
+$color-breakpoints: (
+  // Black Shades
+  blk-color-01:#000000,
+  blk-color-02:#333333,
+  blk-color-03:#222222,
+  // Blue Shades
+  blu-color-01:#0B9FE5,
+  blu-color-02:#0075FF,
+  blu-color-03:#0474F9,
+  blu-color-04:#0177EB,
+  blu-color-05:#0283FF,
+  blu-color-06:#0065C8,
+  blu-color-07:#399EFF,
+  blu-color-08:#085C94,
+  blu-color-09:#5762B1,
+  blu-color-10:#9452B0,
+  blu-color-11:#2B3C4F,
+  // Green Shades
+  grn-color-01:#008000,
+  grn-color-02:#129A67,
+  grn-color-03:#009688,
+  grn-color-04:#00A093,
+  grn-color-05:#099389,
+  grn-color-06:#008B8B,
+  grn-color-07:#027B8C,
+  // Yellow Shades
+  yel-color-01:#ffd700,
+  // White Shades
+  wht-color-01:#FFFFFF,
+  wht-color-02:#F1F5F9,
+  wht-color-03:#F3F3F3,
+  // Gray Shades
+  gry-color-01:#F0F0F0,
+  gry-color-02:#F5F5F5,
+  gry-color-03:#F6F6F6,
+  gry-color-04:#F9F9F9,
+  gry-color-05:#EEEEEE,
+  gry-color-06:#E0E0E0,
+  gry-color-07:#DDDDDD,
+  gry-color-08:#D2D2D2,
+  gry-color-09:#CFCFCF,
+  gry-color-10:#777777,
+  // Red Shades
+  red-color-01:#FF0000,
+  red-color-02:#dc0a0a,
+  red-color-03:#FF4B63,
+  red-color-04:#CB452A,
+  red-color-05:#FF642F,
+  // overlay Shades
+  overlay-color-01:#0000001a,
+  overlay-color-02:#00000033,
+  overlay-color-03:#0000004d,
+  overlay-color-04:#00000066,
+  overlay-color-05:#00000080,
+  overlay-color-06:#00000099,
+  overlay-color-07:#000000b3,
+  overlay-color-08:#000000cc,
+  overlay-color-09:#000000e6,
+  overlay-color-10:#000000,
+);
+  
+// BoxShadows BreakPoints
+$boxshadow-breakpoints: (
+  boxshadow-01:rgba(0, 0, 0, 0.45) 0px 25px 20px -20px,
+  boxshadow-02: rgba(0, 0, 0, 0.35) 0px 5px 15px,
+);
